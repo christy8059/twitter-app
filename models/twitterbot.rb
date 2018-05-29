@@ -22,7 +22,7 @@ class Tweet_Stuff
        @@client.update(str) 
     end
     def retweetTimer(frequency,searchTerm)
-        @@scheduler.every "#{frequency}s" do 
+        @@scheduler.every "#{frequency}m" do 
             @@client.search("##{searchTerm}").each do |tweet|
             @@client.retweet(tweet) 
             end

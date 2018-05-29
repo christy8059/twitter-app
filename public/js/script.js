@@ -1,4 +1,5 @@
 $(function() {
+    $('.submit').hide()
     $('.tweetText').hide()
     $('.followerCheck').hide()
     $('.timer').hide()
@@ -12,15 +13,19 @@ $(function() {
         var option = document.getElementById("option").value
         if (option == "tweet") {
             $('.tweetText').show("slow")
+            $('.submit').show("slow")
         }
         else if (option == "follower") {
             $('.followerCheck').show("slow")
+            $('.submit').show("slow")
         }
         else if (option == "retweetTimer") {
             $('.timer').show("slow")
+            $('.submit').show("slow")
         }
         else {
             $('.directMessage').show("slow")
+            $('.submit').show("slow")
         }
     });
 });

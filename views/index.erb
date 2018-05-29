@@ -22,6 +22,7 @@
 
     <div class="container-fluid">
         <h1>Twitter Bot</h1>
+        
         <form method="post" action="/result">
             <div class="usrname">
                 <h3>What is your name fellow user?</h3>
@@ -32,7 +33,7 @@
               <option value="tweet" selected='selected'>Please choose an option</option>
               <option value="tweet">Tweet</option>
               <option value="follower">Check for the Number of followers</option>
-              <option value="retweetTimer">Retweet Timer</option>
+              <option value="retweetTimer" disabled>Retweet Timer</option>
               <option value="dm">Direct Message</option>
             </select>
             <br>
@@ -42,18 +43,18 @@
             </div>
             <div class="followerCheck">
                 <h3>Which account do you want to check for number of followers?</h3>
-                <input type="text" name="followerCount" placeholder="@example123...">
+                <input type="text" name="followerCount" placeholder="example123...">
             </div>
             <div class="timer">
-                <h3>How often do you want to retweet? (Hours)</h3>
+                <h3>How often do you want to retweet? (Minutes)</h3>
                 <input type="text" name="time" placeholder="Number 1-12">
                 <h3> What would you like to search for?</h3>
                 <input type="text" name="search" placeholder="Topic, Emotion, etc...">
             </div>
             <div class="directMessage">
                 <h3>Direct message yourself in order to see the result</h3>
-                <p><strong>Make sure you follow @Anonymo37841143 in order to see the direct message</strong></p>    
-                <input type="text" name="account" placeholder="@<your username>">
+                <p><strong>(Make sure you follow @Anonymo37841143 in order to see the direct message)</strong></p>    
+                <input type="text" name="account" placeholder="<your username>">
                 <h3>What would you like to send?</h3>
                 <input type="text" name="message" placeholder="Message...">
             </div>
